@@ -13,7 +13,7 @@ function Navigation() {
         <Link href='/about'>About page</Link>
       </li>
       <li>
-        <Link href='/acount'>Account page</Link>
+        <Link href='/account'>Account page</Link>
       </li>
     </ul>
   );
