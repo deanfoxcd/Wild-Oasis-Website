@@ -4,7 +4,7 @@ import Spinner from '../_components/Spinner';
 
 export const metadata = { title: 'Cabins' };
 
-export default async function Page() {
+export default function Page() {
   return (
     <div>
       <h1 className='text-4xl mb-5 text-accent-400 font-medium'>
