@@ -74,7 +74,6 @@ function ReservationCard({ booking }) {
       <div className='flex flex-col border-l border-primary-800 w-[100px]'>
         {!isPast(startDate) ? (
           <>
-            {' '}
             <Link
               href={`/account/reservations/edit/${id}`}
               className='group flex items-center gap-2 uppercase text-xs font-bold text-primary-300 border-b border-primary-800 flex-grow px-3 hover:bg-accent-600 transition-colors hover:text-primary-900'
