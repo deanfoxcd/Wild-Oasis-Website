@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { auth } from '@/app/_lib/auth';
 
 import ReservationList from '@/app/_components/ReservationList';
 
+import { auth } from '@/app/_lib/auth';
 import { getBookings } from '@/app/_lib/data-service';
 
 export const metadata = { title: 'Reservations' };

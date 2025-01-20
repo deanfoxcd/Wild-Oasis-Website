@@ -1,7 +1,6 @@
 'use client';
 
 import { useTransition } from 'react';
-import { useFormStatus } from 'react-dom';
 import { TrashIcon } from '@heroicons/react/24/solid';
 
 function DeleteReservation({ bookingId, onDelete }) {

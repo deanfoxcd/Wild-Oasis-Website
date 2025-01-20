@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { auth } from '../_lib/auth';
 
 export default async function Navigation() {

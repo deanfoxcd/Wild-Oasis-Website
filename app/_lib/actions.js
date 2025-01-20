@@ -1,11 +1,11 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 
 import { auth, signIn, signOut } from './auth';
 import { supabase } from './supabase';
 import { getBookings } from './data-service';
-import { redirect } from 'next/navigation';
 
 export async function updateGuestProfile(formData) {
   const session = await auth();

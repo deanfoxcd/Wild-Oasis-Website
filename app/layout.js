@@ -1,7 +1,7 @@
 import '@/app/_styles/globals.css';
-import { Josefin_Sans, Inter } from 'next/font/google';
-import Logo from '@/app/_components/Logo';
-import Navigation from '@/app/_components/Navigation';
+
+import { Inter, Josefin_Sans } from 'next/font/google';
+
 import Header from './_components/Header';
 import { ReservationProvider } from './_components/ReservationContext';
 
