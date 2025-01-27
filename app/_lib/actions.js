@@ -77,7 +77,7 @@ export async function createReservation(bookingData, formData) {
     extrasPrice: 0,
     totalPrice: bookingData.cabinPrice,
     status: 'unconfirmed',
-    hasBreakfast: false,
+    hasBreakfast: formData.get('hasBreakfast'),
     isPaid: false,
   };
 

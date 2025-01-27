@@ -4,10 +4,12 @@ import { differenceInDays } from 'date-fns';
 import { useReservation } from './ReservationContext';
 import { createReservation } from '../_lib/actions';
 import SubmitButton from './SubmitButton';
+import { useEffect, useState } from 'react';
 
-function ReservationForm({ cabin, user }) {
+function ReservationForm({ cabin, settings, user }) {
   const { range, resetRange } = useReservation();
   const { maxCapacity, regularPrice, discount, id } = cabin;
+  const { breakfastPrice } = settings;
 
   const startDate = range.from;
   const endDate = range.to;
@@ -78,6 +80,28 @@ function ReservationForm({ cabin, user }) {
             className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
             placeholder='Any pets, allergies, special requirements, etc.?'
           />
+        </div>
+
+        <div className='space-y-2'>
+          <label htmlFor='hasBreakfast'>
+            Would you like breakfast? (${breakfastPrice} per day)
+          </label>
+          <select
+            name='hasBreakfast'
+            id='hasBreakfast'
+            className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
+            required
+          >
+            <option value='' key=''>
+              Select Yes or No
+            </option>
+            <option value={true} key={true}>
+              Yes
+            </option>
+            <option value={false} key={false}>
+              No
+            </option>
+          </select>
         </div>
 
         <div className='flex justify-end items-center gap-6'>
