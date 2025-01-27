@@ -11,7 +11,9 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
   const bookingId = params.bookingId;
 
-  const { numGuests, observations, cabinId } = await getBooking(bookingId);
+  const { numGuests, observations, cabinId, hasBreakfast } = await getBooking(
+    bookingId
+  );
 
   const { maxCapacity } = await getCabin(cabinId);
 
@@ -56,6 +58,27 @@ export default async function Page({ params }) {
             defaultValue={observations}
             className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
           />
+        </div>
+
+        <div className='space-y-2'>
+          <label htmlFor='hasBreakfast'>Would you like breakfast?</label>
+          <select
+            name='hasBreakfast'
+            id='hasBreakfast'
+            defaultValue={hasBreakfast}
+            required
+            className='px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm'
+          >
+            <option value='' key=''>
+              Do you want breakfast?
+            </option>
+            <option value={true} key={true}>
+              Yes
+            </option>
+            <option value={false} key={false}>
+              No
+            </option>
+          </select>
         </div>
 
         <div className='flex justify-end items-center gap-6'>

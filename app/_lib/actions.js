@@ -47,8 +47,9 @@ export async function updateReservation(formData) {
 
   const numGuests = Number(formData.get('numGuests'));
   const observations = formData.get('observations').slice(0, 1000);
+  const hasBreakfast = formData.get('hasBreakfast');
 
-  const updateData = { numGuests, observations };
+  const updateData = { numGuests, observations, hasBreakfast };
 
   const { error } = await supabase
     .from('bookings')
