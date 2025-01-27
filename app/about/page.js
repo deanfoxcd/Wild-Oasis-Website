@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import about1 from '@/public/about-1.jpg';
+import about2 from '@/public/about-2.jpg';
 
 import { getCabins } from '../_lib/data-service';
 
@@ -51,7 +52,8 @@ export default async function Page() {
 
       <div className='col-span-2 relative aspect-square'>
         <Image
-          src='/about-2.jpg'
+          src={about2}
+          placeholder='blur'
           fill
           className='object-cover'
           alt='Family that manages The Wild Oasis'
