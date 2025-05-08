@@ -43,6 +43,7 @@ export const getCabins = async function () {
     .from('cabins')
     .select('id, name, maxCapacity, regularPrice, discount, image')
     .order('name');
+  console.log('Data:', data);
 
   if (error) {
     console.error(error);
