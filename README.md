@@ -1,6 +1,6 @@
 # 🏝️ The Wild Oasis Website
 
-[![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-000?logo=vercel&style=flat-square)](https://wild-oasis-website-91h71zjrb-dean-foxs-projects.vercel.app/) ![React](https://img.shields.io/badge/React-2023-blue?logo=react&style=flat-square) ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+[![Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-000?logo=vercel&style=flat-square)](https://wild-oasis-website-91h71zjrb-dean-foxs-projects.vercel.app/) ![React](https://img.shields.io/badge/React-2023-blue?logo=react&style=flat-square)
 
 A beautiful, modern client-facing website for The Wild Oasis – a fictional luxury cabin resort. This site is designed to complement the internal admin platform, providing guests with an immersive and seamless booking experience.
 
